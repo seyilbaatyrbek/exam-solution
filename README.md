@@ -1,4 +1,4 @@
-# RotateEucyon Foundation Normal Exam
+# Eucyon Foundation Normal Exam
 
 ## Getting Started
 
