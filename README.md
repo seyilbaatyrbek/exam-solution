@@ -34,12 +34,15 @@ Java:
 - You may use more packages to separate the exercises within the `com.gfa.exam`
   package
 
+Typescript:
+- Make sure to export all of your classes and functions.
+
 ## Exercises
 
 
 ### Multiply items in a matrix
 
-Write a method called `multiplyMatrix` that takes a matrix of non-negative integers
+Write a method called `multiplyMatrix` that takes a matrix of integers
 (any matrix is allowed, including square matrices) as a parameter.
 
 The function should:
@@ -49,7 +52,6 @@ The function should:
 - use the same indexing which we use in most programming language (starting with 0)
   and remember that 0 is also an even number.
   See the example for better understanding and ask questions if it is still unclear.
-- If the matrix has a negative integer throw an `ts: error` / `java: IllegalArgumentException` with the following message: `Matrix should not contain negative integers.`
 
 Write at least 2 different unit tests, one that tests normal operation and one that tests unexpected input.
 
@@ -129,14 +131,17 @@ You are going to create a Candy shop where we sell hard candies and lollipops.
 
 - It has a `price` and an `amountOfSugar`.
 - 2 kinds of candy exist: `Lollipop` or `HardCandy`.
+- There is no need for special constructors the default will do it
 
 ##### Lollipop
 
 - The price is $2 and it is made from 60 grams of sugar.
+- The default values should be set in the constructor of the class
 
 ##### HardCandy
 
 - The price is $4 and it is made from 80 grams of sugar.
+- The default values should be set in the constructor of the class
 
 #### Candy shop
 
