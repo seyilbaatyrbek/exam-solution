@@ -49,7 +49,7 @@ The function should:
 - use the same indexing which we use in most programming language (starting with 0)
   and remember that 0 is also an even number.
   See the example for better understanding and ask questions if it is still unclear.
-- If the matrix has a negative integer throw an error with the following message: `Matrix should not contain negative integers.`
+- If the matrix has a negative integer throw an `ts: error` / `java: IllegalArgumentException` with the following message: `Matrix should not contain negative integers.`
 
 Write at least 2 different unit tests, one that tests normal operation and one that tests unexpected input.
 
@@ -109,7 +109,7 @@ Write a method called `deleteComments` which can read and parse a `javascript` f
   - By single line comments we mean the lines that starts with `//`
 - And removes them single line comments from the original file.
 - It writes the comment-free code to the original file.
-- If there is a problem with reading or writing the file the method should catch the error and write to the console the following message: `An error occured with accessing the files.`
+- If there is a problem with reading or writing the file the method should catch the error / exception and write to the console the following message: `An error occured with accessing the files.`
 
 #### Example
 
@@ -147,7 +147,7 @@ You are going to create a Candy shop where we sell hard candies and lollipops.
 
 - It has a `createCandy()` method which takes any type of `Candy` as a parameter
 
-  - the `sugar` can't go below 0 » throw an error/exception if it happens with a descriptive message
+  - the `sugar` can't go below 0 » throw an `error / IllegalArgumentException` if it happens with a descriptive message
   - otherwise store the candy in the `inventory` and
   - reduce the `sugar` amount by the amount needed to create the candies
 
@@ -166,7 +166,7 @@ You are going to create a Candy shop where we sell hard candies and lollipops.
 
   - the `amount` parameter's unit is KiloGram
   - price of 1000 grams sugar is $2
-  - the income can't go below 0 » throw an error/exception if it happens with a descriptive message
+  - the income can't go below 0 » throw an `error / IllegalArgumentException` if it happens with a descriptive message
   - otherwise it raises the Candy Shop's amount of sugar
     and reduces the income by the price
     - note that the sugar in the candy shop is stored in grams.
