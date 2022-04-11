@@ -39,7 +39,7 @@ Java:
 
 ### Multiply items in a matrix
 
-Write a method that takes a matrix of non-negative integers
+Write a method called `multiplyMatrix` that takes a matrix of non-negative integers
 (any matrix is allowed, including square matrices) as a parameter.
 
 The function should:
@@ -49,6 +49,7 @@ The function should:
 - use the same indexing which we use in most programming language (starting with 0)
   and remember that 0 is also an even number.
   See the example for better understanding and ask questions if it is still unclear.
+- If the matrix has a negative integer throw an error with the following message: `Matrix should not contain negative integers.`
 
 Write at least 2 different unit tests, one that tests normal operation and one that tests unexpected input.
 
@@ -102,10 +103,13 @@ Output
 
 ### Delete the comments
 
-Write a method which can read and parse a `javascript` file. 
-The method returns the number of the single line comments 
-and removes them from the original file.
-It writes the comment-free code to the original file.
+Write a method called `deleteComments` which can read and parse a `javascript` file. 
+- It takes the path to the file as a string parameter
+- The method returns the number of the single line comments
+  - By single line comments we mean the lines that starts with `//`
+- And removes them single line comments from the original file.
+- It writes the comment-free code to the original file.
+- If there is a problem with reading or writing the file the method should catch the error and write to the console the following message: `An error occured with accessing the files.`
 
 #### Example
 
@@ -123,7 +127,7 @@ You are going to create a Candy shop where we sell hard candies and lollipops.
 
 #### Candy
 
-- It has a price and an amount of sugar.
+- It has a `price` and an `amountOfSugar`.
 - 2 kinds of candy exist: `Lollipop` or `HardCandy`.
 
 ##### Lollipop
@@ -139,6 +143,7 @@ You are going to create a Candy shop where we sell hard candies and lollipops.
 - It has `sugar`, `income`, and an `inventory` (list of candies).
 
 - It takes an `amountOfSugar` parameter in gram when creating an instance.
+  - `income` is zero and `iventory` is an empty array by default
 
 - It has a `createCandy()` method which takes any type of `Candy` as a parameter
 
@@ -154,7 +159,8 @@ You are going to create a Candy shop where we sell hard candies and lollipops.
 
   - the income will be increased by the price of the candies that were sold,
   - sold candies will be deleted from the inventory
-  - can't sell more candies than the amount of inventory has » sell the maximum possible amount (number) of candies
+  - can't sell more candies than the amount of inventory has
+  - if the `amountOfCandiesToBeSold` is greater than the inventory size then sell all the candies from the inventory
 
 - It has a `buySugar()` method which takes an `amount` as parameter
 
@@ -162,7 +168,8 @@ You are going to create a Candy shop where we sell hard candies and lollipops.
   - price of 1000 grams sugar is $2
   - the income can't go below 0 » throw an error/exception if it happens with a descriptive message
   - otherwise it raises the Candy Shop's amount of sugar
-    and reduces the income by the price of it
+    and reduces the income by the price
+    - note that the sugar in the candy shop is stored in grams.
 
 - It has a `toString()` method which represents the Candy Shop
 
