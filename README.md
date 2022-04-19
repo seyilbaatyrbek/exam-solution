@@ -34,12 +34,15 @@ Java:
 - You may use more packages to separate the exercises within the `com.gfa.exam`
   package
 
+Typescript:
+- Make sure to export all of your classes and functions.
+
 ## Exercises
 
 
 ### Multiply items in a matrix
 
-Write a method that takes a matrix of non-negative integers
+Write a method called `multiplyMatrix` that takes a matrix of integers
 (any matrix is allowed, including square matrices) as a parameter.
 
 The function should:
@@ -102,10 +105,13 @@ Output
 
 ### Delete the comments
 
-Write a method which can read and parse a `javascript` file. 
-The method returns the number of the single line comments 
-and removes them from the original file.
-It writes the comment-free code to the original file.
+Write a method called `deleteComments` which can read and parse a `javascript` file. 
+- It takes the path to the file as a string parameter
+- The method returns the number of the single line comments
+  - By single line comments we mean the lines that starts with `//`
+- And removes them single line comments from the original file.
+- It writes the comment-free code to the original file.
+- If there is a problem with reading or writing the file the method should catch the error / exception and write to the console the following message: `An error occurred with accessing the files.`
 
 #### Example
 
@@ -123,26 +129,30 @@ You are going to create a Candy shop where we sell hard candies and lollipops.
 
 #### Candy
 
-- It has a price and an amount of sugar.
+- It has a `price` and an `amountOfSugar`.
 - 2 kinds of candy exist: `Lollipop` or `HardCandy`.
+- There is no need for special constructors the default will do it
 
 ##### Lollipop
 
 - The price is $2 and it is made from 60 grams of sugar.
+- The default values should be set in the constructor of the class
 
 ##### HardCandy
 
 - The price is $4 and it is made from 80 grams of sugar.
+- The default values should be set in the constructor of the class
 
 #### Candy shop
 
 - It has `sugar`, `income`, and an `inventory` (list of candies).
 
 - It takes an `amountOfSugar` parameter in gram when creating an instance.
+  - `income` is zero and `iventory` is an empty array by default
 
 - It has a `createCandy()` method which takes any type of `Candy` as a parameter
 
-  - the `sugar` can't go below 0 » throw an error/exception if it happens with a descriptive message
+  - the `sugar` can't go below 0 » throw an `error / IllegalArgumentException` if it happens with a descriptive message
   - otherwise store the candy in the `inventory` and
   - reduce the `sugar` amount by the amount needed to create the candies
 
@@ -154,15 +164,17 @@ You are going to create a Candy shop where we sell hard candies and lollipops.
 
   - the income will be increased by the price of the candies that were sold,
   - sold candies will be deleted from the inventory
-  - can't sell more candies than the amount of inventory has » sell the maximum possible amount (number) of candies
+  - can't sell more candies than the amount of inventory has
+  - if the `amountOfCandiesToBeSold` is greater than the inventory size then sell all the candies from the inventory
 
 - It has a `buySugar()` method which takes an `amount` as parameter
 
   - the `amount` parameter's unit is KiloGram
   - price of 1000 grams sugar is $2
-  - the income can't go below 0 » throw an error/exception if it happens with a descriptive message
+  - the income can't go below 0 » throw an `error / IllegalArgumentException` if it happens with a descriptive message
   - otherwise it raises the Candy Shop's amount of sugar
-    and reduces the income by the price of it
+    and reduces the income by the price
+    - note that the sugar in the candy shop is stored in grams.
 
 - It has a `toString()` method which represents the Candy Shop
 

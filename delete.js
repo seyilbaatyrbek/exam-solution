@@ -1,4 +1,4 @@
-/* eslint-disable */ //magic
+/* eslint-disable */
 
 // Use strict is sooo important
 'use strict'; 
