@@ -5,7 +5,7 @@
 - **Fork** this repository under your own account
 - Clone your forked repository to your computer
 - Create a `.gitignore` file so generated files won't be committed
-- Commit your progress frequently and with descriptive commit messages
+- Commit and push your progress frequently and with descriptive commit messages
 - All your answers and solutions should go in this repository
 - Take care of style guide
 - Take care of the naming of classes, fields, variables, files, etc.
@@ -17,33 +17,17 @@
 - **Don't just copy-paste** your answers and solutions,
   use your own words instead
 
-- **Don't push your work** to GitHub until your mentor announces
-  that the time is up
-
-- At the end of the exam push your solution to **GitHub** _and_ upload your
-  solution to **Gradescope**
+- At the end of the exam push your solution to **GitHub** 
   - You may push your solution to GitHub multiple times in the allocated
     time
-  - You may upload to Gradescope multiple times in the allocated time
-  - You may upload your solution to Gradescope as a zip file or by linking
-    the exam repository to the assignment
-
-Java:
-
-- All of your classes should be in the `com.gfa.exam` package
-- You may use more packages to separate the exercises within the `com.gfa.exam`
-  package
-
-Typescript:
-- Make sure to export all of your classes and functions.
 
 ## Exercises
 
 
 ### Multiply items in a matrix
 
-Write a method called `multiplyMatrix` that takes a matrix of integers
-(any matrix is allowed, including square matrices) as a parameter.
+Write a method called `MultiplyMatrix` that takes a matrix of integers
+(any matrix is allowed, including not square and jagged matrices) as a parameter.
 
 The function should:
 
@@ -105,7 +89,7 @@ Output
 
 ### Delete the comments
 
-Write a method called `deleteComments` which can read and parse a `javascript` file. 
+Write a method called `DeleteComments` which can read and parse a `javascript` file. 
 - It takes the path to the file as a string parameter
 - The method returns the number of the single line comments
   - By single line comments we mean the lines that starts with `//`
@@ -129,7 +113,7 @@ You are going to create a Candy shop where we sell hard candies and lollipops.
 
 #### Candy
 
-- It has a `price` and an `amountOfSugar`.
+- It has a `Price` and an `AmountOfSugar`.
 - 2 kinds of candy exist: `Lollipop` or `HardCandy`.
 - There is no need for special constructors the default will do it
 
@@ -145,38 +129,38 @@ You are going to create a Candy shop where we sell hard candies and lollipops.
 
 #### Candy shop
 
-- It has `sugar`, `income`, and an `inventory` (list of candies).
+- It has `Sugar`, `Income`, and an `Inventory` (list of candies).
 
 - It takes an `amountOfSugar` parameter in gram when creating an instance.
-  - `income` is zero and `iventory` is an empty array by default
+  - `Income` is zero and `Inventory` is an empty list by default
 
-- It has a `createCandy()` method which takes any type of `Candy` as a parameter
+- It has a `CreateCandy()` method which takes any type of `Candy` as a parameter
 
-  - the `sugar` can't go below 0 » throw an `error / IllegalArgumentException` if it happens with a descriptive message
-  - otherwise store the candy in the `inventory` and
-  - reduce the `sugar` amount by the amount needed to create the candies
+  - the `Sugar` can't go below 0 » throw an `ArgumentOutOfRangeException` if it happens with a descriptive message
+  - otherwise store the candy in the `Inventory` and
+  - reduce the `Sugar` amount by the amount needed to create the candies
 
-- It has a `raisePrice()` method which takes an `amount` as a parameter
+- It has a `RaisePrice()` method which takes an `Amount` as a parameter
 
-  - raise the prices of all the candies in the `inventory` with the `amount`
+  - raise the prices of all the candies in the `Inventory` with the `Amount`
 
-- It has a `sell()` method which takes an `amountOfCandiesToBeSold` as parameter
+- It has a `Sell()` method which takes an `amountOfCandiesToBeSold` as parameter
 
   - the income will be increased by the price of the candies that were sold,
   - sold candies will be deleted from the inventory
   - can't sell more candies than the amount of inventory has
   - if the `amountOfCandiesToBeSold` is greater than the inventory size then sell all the candies from the inventory
 
-- It has a `buySugar()` method which takes an `amount` as parameter
+- It has a `BuySugar()` method which takes an `amount` as parameter
 
   - the `amount` parameter's unit is KiloGram
   - price of 1000 grams sugar is $2
-  - the income can't go below 0 » throw an `error / IllegalArgumentException` if it happens with a descriptive message
+  - the income can't go below 0 » throw an `ArgumentOutOfRangeException` if it happens with a descriptive message
   - otherwise it raises the Candy Shop's amount of sugar
     and reduces the income by the price
     - note that the sugar in the candy shop is stored in grams.
 
-- It has a `toString()` method which represents the Candy Shop
+- It has a `ToString()` method which represents the Candy Shop
 
   - return a string in this format:
     
