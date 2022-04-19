@@ -109,7 +109,7 @@ Write a method called `deleteComments` which can read and parse a `javascript` f
 - It takes the path to the file as a string parameter
 - The method returns the number of the single line comments
   - By single line comments we mean the lines that starts with `//`
-- And removes them single line comments from the original file.
+- And removes the single line comments from the original file.
 - It writes the comment-free code to the original file.
 - If there is a problem with reading or writing the file the method should catch the error / exception and write to the console the following message: `An error occurred with accessing the files.`
 
