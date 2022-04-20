@@ -16,7 +16,7 @@
 
 - **Don't just copy-paste** your answers and solutions,
   use your own words instead
-  - **Don't push your work** to GitHub until your mentor announces
+- **Don't push your work** to GitHub until your mentor announces
   that the time is up
 
 - At the end of the exam push your solution to **GitHub** _and_ upload your
