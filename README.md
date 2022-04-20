@@ -113,26 +113,31 @@ You are going to create a Candy shop where we sell hard candies and lollipops.
 
 #### Candy
 
-- It has a `Price` and an `AmountOfSugar`.
+- It has a `price` and an `amountOfSugar`.
+  - The `price` can be decimal
+ 
 - 2 kinds of candy exist: `Lollipop` or `HardCandy`.
 - There is no need for special constructors the default will do it
 
 ##### Lollipop
 
-- The price is $2 and it is made from 60 grams of sugar.
+- The price is $2.0 and it is made from 60 grams of sugar.
 - The default values should be set in the constructor of the class
 
 ##### HardCandy
 
-- The price is $4 and it is made from 80 grams of sugar.
+- The price is $4.0 and it is made from 80 grams of sugar.
 - The default values should be set in the constructor of the class
 
 #### Candy shop
 
-- It has `Sugar`, `Income`, and an `Inventory` (list of candies).
+
+- It has `sugar`, `income`, and an `inventory` (list of candies).
+  - The `income` can be decimal
 
 - It takes an `amountOfSugar` parameter in gram when creating an instance.
-  - `Income` is zero and `Inventory` is an empty list by default
+  - `income` is zero and `inventory` is an empty array by default
+
 
 - It has a `CreateCandy()` method which takes any type of `Candy` as a parameter
 
@@ -164,7 +169,7 @@ You are going to create a Candy shop where we sell hard candies and lollipops.
 
   - return a string in this format:
     
-    - `Inventory: 0 hard candies, 1 lollipops; Income: $100; Sugar: 400 grams`
+    - `Inventory: 0 hard candies, 1 lollipops; Income: $100.0; Sugar: 400 grams`
 
 ## Command line exercise
 
