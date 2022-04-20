@@ -5,7 +5,7 @@
 - **Fork** this repository under your own account
 - Clone your forked repository to your computer
 - Create a `.gitignore` file so generated files won't be committed
-- Commit and push your progress frequently and with descriptive commit messages
+- Commit your progress frequently and with descriptive commit messages
 - All your answers and solutions should go in this repository
 - Take care of style guide
 - Take care of the naming of classes, fields, variables, files, etc.
@@ -16,10 +16,25 @@
 
 - **Don't just copy-paste** your answers and solutions,
   use your own words instead
+  - **Don't push your work** to GitHub until your mentor announces
+  that the time is up
+
+- At the end of the exam push your solution to **GitHub** _and_ upload your
+  solution to **Gradescope**
 
 - At the end of the exam push your solution to **GitHub** 
-  - You may push your solution to GitHub multiple times in the allocated
-    time
+- You may upload to Gradescope multiple times in the allocated time
+  - You may upload your solution to Gradescope as a zip file or by linking
+    the exam repository to the assignment
+
+Java:
+
+- All of your classes should be in the `com.gfa.exam` package
+- You may use more packages to separate the exercises within the `com.gfa.exam`
+  package
+
+Typescript:
+- Make sure to export all of your classes and functions.
 
 ## Exercises
 
