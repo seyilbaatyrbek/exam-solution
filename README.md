@@ -141,7 +141,7 @@ You are going to create a Candy shop where we sell hard candies and lollipops.
 
 - It has a `CreateCandy()` method which takes any type of `Candy` as a parameter
 
-  - the `Sugar` can't go below 0 » throw an `IllegalArgumentException` if it happens with a descriptive message
+  - the `Sugar` can't go below 0 » throw an `error / IllegalArgumentException` if it happens with a descriptive message
   - otherwise store the candy in the `Inventory` and
   - reduce the `Sugar` amount by the amount needed to create the candies
 
@@ -149,7 +149,7 @@ You are going to create a Candy shop where we sell hard candies and lollipops.
 
   - raise the prices of all the candies in the `Inventory` with the `Amount`
 
-- It has a `Sell()` method which takes an `error / amountOfCandiesToBeSold` as parameter
+- It has a `Sell()` method which takes an `amountOfCandiesToBeSold` as parameter
 
   - the income will be increased by the price of the candies that were sold,
   - sold candies will be deleted from the inventory
