@@ -24,7 +24,7 @@
 
 - At the end of the exam push your solution to **GitHub** 
 - You may upload to Gradescope multiple times in the allocated time
-  - You may upload your solution to Gradescope as a zip file or by linking
+- You may upload your solution to Gradescope as a zip file or by linking
     the exam repository to the assignment
 
 Java:
