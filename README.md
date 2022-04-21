@@ -18,23 +18,30 @@
   use your own words instead
 - **Don't push your work** to GitHub until your mentor announces
   that the time is up
+- At the end of the exam push your solution to **GitHub**
 
-- At the end of the exam push your solution to **GitHub** _and_ upload your
-  solution to **Gradescope**
-
-- At the end of the exam push your solution to **GitHub** 
-- You may upload to Gradescope multiple times in the allocated time
-- You may upload your solution to Gradescope as a zip file or by linking
-    the exam repository to the assignment
-
-Java:
+### Java
 
 - All of your classes should be in the `com.gfa.exam` package
 - You may use more packages to separate the exercises within the `com.gfa.exam`
   package
+- At the end of the exam (when the mentor announces) push your solution to **GitHub**
+- _and_ at the end of the exam upload your solution to **Gradescope** too
 
-Typescript:
+### TypeScript
 - Make sure to export all of your classes and functions.
+- At the end of the exam (when the mentor announces) push your solution to **GitHub**
+- _and_ upload your solution to **Gradescope** too
+
+### C#
+- ?
+
+## GradeScope notes for Java and TypeScript
+
+- At the end of the exam push your solution to **Gradescope** too
+- You may upload to Gradescope multiple times in the allocated time
+- You may upload your solution to Gradescope as a **zip** file or by linking
+    the exam repository to the assignment
 
 ## Exercises
 
