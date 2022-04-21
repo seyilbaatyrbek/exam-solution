@@ -49,7 +49,8 @@
 ### Multiply items in a matrix
 
 Write a method called `MultiplyMatrix` that takes a matrix of integers
-(any matrix is allowed, including not square and jagged matrices) as a parameter.
+(any matrix is allowed, including not square and jagged matrices) as a parameter
+and returns with the new matrix.
 
 The function should:
 
