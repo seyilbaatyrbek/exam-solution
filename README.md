@@ -15,7 +15,7 @@
 - You can use any resource online, but **please work individually**
 
 - **Don't just copy-paste** your answers and solutions,
-  use your own words instead
+  you need to understand every line of your code
 - **Don't push your work** to GitHub until your mentor announces
   that the time is up
 - At the end of the exam push your solution to **GitHub**
@@ -25,42 +25,40 @@
 - All of your classes should be in the `com.gfa.exam` package
 - You may use more packages to separate the exercises within the `com.gfa.exam`
   package
-- At the end of the exam (when the mentor announces) push your solution to **GitHub**
-- _and_ at the end of the exam upload your solution to **Gradescope** too
+- At the end of the exam upload your solution to **Gradescope** too
 
 ### TypeScript
+
 - Make sure to export all of your classes and functions.
-- At the end of the exam (when the mentor announces) push your solution to **GitHub**
-- _and_ upload your solution to **Gradescope** too
+- At the end of the exam upload your solution to **Gradescope** too
 
 ### C#
+
 - Method names should start with capital letter
 
 ## GradeScope notes for Java and TypeScript
 
-- At the end of the exam push your solution to **Gradescope** too
+- One hour before the end of the exam you can push your solution to **Gradescope** too
 - You may upload to Gradescope multiple times in the allocated time
-- You may upload your solution to Gradescope as a **zip** file or by linking
-    the exam repository to the assignment
+- You may upload your solution to Gradescope as a **zip** file
 
 ## Exercises
 
 
 ### Multiply items in a matrix
 
-Write a function / method called `multiplyMatrix` that takes a matrix of integers
-(any matrix is allowed, including not square and jagged matrices) as a parameter
-and returns with the new matrix.
+Write a function / method called `multiplyMatrix` that takes a 2D array of integers
+(any 2D array is allowed, including not square and jagged 2D arrays) as a parameter
+and returns with the new 2D array.
 
 The function should:
 
 - multiply each odd (1,3,5,7,9,...) number by 2 in each odd indexed row
-- multiply each even (2,4,6,8,10,...) number by 2 in each even indexed row
+- multiply each even (0,2,4,6,8,10,...) number by 2 in each even indexed row
 - use the same indexing which we use in most programming language (starting with 0)
   and remember that 0 is also an even number.
-  See the example for better understanding and ask questions if it is still unclear.
 
-Write at least 2 different unit tests, one that tests normal operation and one that tests unexpected input.
+Write at least 2 different unit tests, one that tests normal operation and one edge case.
 
 #### Example 1
 
@@ -99,7 +97,7 @@ Input
 ]
 ```
 
-Output
+Return value
 
 ```text
 [
@@ -112,13 +110,14 @@ Output
 
 ### Delete the comments
 
-Write a funtion / method called `deleteComments` which can read and parse a `javascript` file. 
+Write a function / method called `deleteComments` which can read and parse a `javascript` file. 
+- Consider JS file as a normal text file
 - It takes the path to the file as a string parameter
 - The method returns the number of the single line comments
-  - By single line comments we mean the lines that starts with `//`
+  - Single line comments are the lines that starts with `//`
 - And removes the single line comments from the original file.
-- It writes the comment-free code to the original file.
-- If there is a problem with reading or writing the file the method should catch the error / exception and write to the console the following message: `An error occurred with accessing the files.`
+- It writes the comment-free code to file named: `./<filename>-clean.js`.
+- If there is a problem with reading or writing the file the method should catch the error / exception and throw a new one with the following message: `An error occurred with accessing the files.`
 
 #### Example
 
