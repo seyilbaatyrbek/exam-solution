@@ -47,7 +47,7 @@
 
 ### Multiply items in a matrix
 
-Write a function / method called `multiplyMatrix` that takes a 2D array of integers
+Write a function / method called `multiplyMatrix()` that takes a 2D array of integers
 (any 2D array is allowed, including not square and jagged 2D arrays) as a parameter
 and returns with the new 2D array.
 
@@ -110,7 +110,7 @@ Return value
 
 ### Delete the comments
 
-Write a function / method called `deleteComments` which can read and parse a `javascript` file. 
+Write a function / method called `deleteComments()` which can read and parse a `javascript` file. 
 - Consider JS file as a normal text file
 - It takes the path to the file as a string parameter
 - The method returns the number of the single line comments
@@ -123,7 +123,7 @@ Write a function / method called `deleteComments` which can read and parse a `ja
 
 [Example file can be found here.](./delete.js)
 
-Output
+Return value
 
 ```text
 4
@@ -142,16 +142,15 @@ You are going to create a Candy shop where we sell hard candies and lollipops.
 
 ##### Lollipop
 
-- The price is $2.0 and it is made from 60 grams of sugar.
+- The `price` is $2.0 and it is made from 60 grams of sugar.
 - The default values should be set in the constructor of the class
 
 ##### HardCandy
 
-- The price is $4.0 and it is made from 80 grams of sugar.
+- The `price` is $4.0 and it is made from 80 grams of sugar.
 - The default values should be set in the constructor of the class
 
 #### Candy shop
-
 
 - It has `sugar`, `income`, and an `inventory` (list of candies).
   - The `income` can be decimal
@@ -159,38 +158,38 @@ You are going to create a Candy shop where we sell hard candies and lollipops.
 - It takes an `amountOfSugar` parameter in gram when creating an instance.
   - `income` is zero and `inventory` is an empty array by default
 
+- It has a `storeCandy()` method which takes any `Candy` as a parameter
 
-- It has a `createCandy()` method which takes any type of `Candy` as a parameter
+  - the `sugar` can't go below 0 » throw an error / exception if it happens with a message: "Insufficient sugar"
+  - otherwise store the candy in the `inventory` and
+  - reduce the `sugar` amount by the amount needed to create the candies
 
-  - the `Sugar` can't go below 0 » throw an `error / IllegalArgumentException` if it happens with a descriptive message
-  - otherwise store the candy in the `Inventory` and
-  - reduce the `Sugar` amount by the amount needed to create the candies
+- It has a `raisePrice()` method which takes an `amount` as a parameter
 
-- It has a `raisePrice()` method which takes an `Amount` as a parameter
-
-  - raise the prices of all the candies in the `Inventory` with the `Amount`
+  - raise the prices of all the candies in the `inventory` with the `amount`
 
 - It has a `sell()` method which takes an `amountOfCandiesToBeSold` as parameter
 
-  - the income will be increased by the price of the candies that were sold,
-  - sold candies will be deleted from the inventory
-  - can't sell more candies than the amount of inventory has
+  - the `income` will be increased by the `price` of the candies that were sold,
+  - sold candies will be deleted from the `inventory`
+  - can't sell more candies than there are in the `inventory`
+  - start the selling from the beginning of the `inventory`
   - if the `amountOfCandiesToBeSold` is greater than the inventory size then sell all the candies from the inventory
 
 - It has a `buySugar()` method which takes an `amount` as parameter
 
   - the `amount` parameter's unit is KiloGram
   - price of 1000 grams sugar is $2
-  - the income can't go below 0 » throw an `error / IllegalArgumentException` if it happens with a descriptive message
+  - the `income` can't go below 0 » throw an error / exception if it happens with a message: "Insufficient income"
   - otherwise it raises the Candy Shop's amount of sugar
-    and reduces the income by the price
+    and reduces the `income` by the price of the sugar purchased
     - note that the sugar in the candy shop is stored in grams.
 
-- It has a `toString()` method which represents the Candy Shop
+- Create a method `toString()` representing the Candy Shop which overrides the inherited method
 
+  - Display only whole numbers
   - return a string in this format:
-    
-    - `Inventory: 0 hard candies, 1 lollipops; Income: $100.0; Sugar: 400 grams`
+    - `Inventory: 0 hard candies, 1 lollipops; Income: $100; Sugar: 400 grams`
 
 ## Command line exercise
 
@@ -216,6 +215,7 @@ kindergarten
 ```
 
 - Your task is to write commands in the correct order from the directory given below.
+- You only need to give the commands (not need to run them)
 - Do it with the smallest number of commands possible without chaining them together.
 - Assume that the following files are currently in the staging area:
   - `kindergarten/groups/first-group/activities/painting.md`
@@ -232,7 +232,8 @@ kindergarten
       - `David Sanchez,5,17.1 kg,106.2 cm`
 
      (The file should only contain the above 2 lines as a result.)
-  1. Commit all the changes
+  1. Write the command which commits all the changes
+
 
 - Solution:
 
