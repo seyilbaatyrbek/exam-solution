@@ -117,7 +117,7 @@ Write a function / method called `deleteComments()` which can read and parse a `
   - Single line comments are the lines that starts with `//`
 - And removes the single line comments from the original file.
 - It writes the comment-free code to file named: `./clean-<filename.extension>`.
-  - Filename should contain the extension too  
+  - Filename should be followed by the extension
 - If there is a problem with reading or writing the file the method should catch the error / exception and throw a new one with the following message: `An error occurred with accessing the files.`
 
 #### Example
