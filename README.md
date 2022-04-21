@@ -112,12 +112,12 @@ Return value
 
 Write a function / method called `deleteComments()` which can read and parse a `javascript` file. 
 - Consider JS file as a normal text file
-- It takes the path to the file as a string parameter
-- The method returns the number of the single line comments
-  - Single line comments are the lines that starts with `//`
-- And removes the single line comments from the original file.
+- the function / method takes the path to the file as a string parameter
+- The method removes the single line comments from the content.
 - It writes the comment-free code to file named: `./clean-<filename.extension>`.
   - Filename should be followed by the extension
+- The method returns the number of the single line comments
+  - Single line comments are the lines that starts with `//`
 - If there is a problem with reading or writing the file the method should catch the error / exception and throw a new one with the following message: `An error occurred with accessing the files.`
 
 #### Example
