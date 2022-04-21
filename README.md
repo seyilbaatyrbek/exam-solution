@@ -139,7 +139,6 @@ You are going to create a Candy shop where we sell hard candies and lollipops.
   - The `price` can be decimal
  
 - 2 kinds of candy exist: `Lollipop` or `HardCandy`.
-- There is no need for special constructors the default will do it
 
 ##### Lollipop
 
