@@ -75,7 +75,7 @@ Input
 ]
 ```
 
-Output
+Return value
 
 ```text
 [
