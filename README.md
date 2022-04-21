@@ -48,7 +48,7 @@
 
 ### Multiply items in a matrix
 
-Write a method called `multiplyMatrix` that takes a matrix of integers
+Write a function / method called `multiplyMatrix` that takes a matrix of integers
 (any matrix is allowed, including not square and jagged matrices) as a parameter
 and returns with the new matrix.
 
@@ -112,7 +112,7 @@ Output
 
 ### Delete the comments
 
-Write a method called `deleteComments` which can read and parse a `javascript` file. 
+Write a funtion / method called `deleteComments` which can read and parse a `javascript` file. 
 - It takes the path to the file as a string parameter
 - The method returns the number of the single line comments
   - By single line comments we mean the lines that starts with `//`
