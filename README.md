@@ -26,6 +26,8 @@
 - You may use more packages to separate the exercises within the `com.gfa.exam`
   package
 - At the end of the exam upload your solution to **Gradescope** too
+- Do not upload the unit tests to gradescope because it will break the tests.
+  - Create the zip file and delete the unit tests from it before uploading
 
 ### TypeScript
 
