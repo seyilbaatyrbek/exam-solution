@@ -34,7 +34,7 @@
 - Make sure to export all of your classes and functions.
 - At the end of the exam upload your solution to **Gradescope** too
 
-### C#
+### C
 
 - Method names should start with capital letter
 
@@ -45,7 +45,6 @@
 - You may upload your solution to Gradescope as a **zip** file
 
 ## Exercises
-
 
 ### Multiply items in a matrix
 
@@ -112,7 +111,8 @@ Return value
 
 ### Delete the comments
 
-Write a function / method called `deleteComments()` which can read and parse a `javascript` file. 
+Write a function / method called `deleteComments()` which can read and parse a `javascript` file.
+
 - Consider JS file as a normal text file
 - the function / method takes the path to the file as a string parameter
 - The method removes the single line comments from the content.
@@ -139,26 +139,29 @@ You are going to create a Candy shop where we sell hard candies and lollipops.
 #### Candy
 
 - It has a `price` and an `amountOfSugar`.
+
   - The `price` can be decimal
- 
+
 - 2 kinds of candy exist: `Lollipop` or `HardCandy`.
 
 ##### Lollipop
 
-- The `price` is $2.0 and it is made from 60 grams of sugar.
+- The `price` is \$2.0 and it is made from 60 grams of sugar.
 - The default values should be set in the constructor of the class
 
 ##### HardCandy
 
-- The `price` is $4.0 and it is made from 80 grams of sugar.
+- The `price` is \$4.0 and it is made from 80 grams of sugar.
 - The default values should be set in the constructor of the class
 
 #### Candy shop
 
 - It has `sugar`, `income`, and an `inventory` (list of candies).
+
   - The `income` can be decimal
 
 - It takes an `amountOfSugar` parameter in gram when creating an instance.
+
   - `income` is zero and `inventory` is an empty array by default
 
 - It has a `storeCandy()` method which takes any `Candy` as a parameter
@@ -182,7 +185,7 @@ You are going to create a Candy shop where we sell hard candies and lollipops.
 - It has a `buySugar()` method which takes an `amount` as parameter
 
   - the `amount` parameter's unit is KiloGram
-  - price of 1000 grams sugar is $2
+  - price of 1000 grams sugar is \$2
   - the `income` can't go below 0 » throw an error / exception if it happens with a message: "Insufficient income"
   - otherwise it raises the Candy Shop's amount of sugar
     and reduces the `income` by the price of the sugar purchased
@@ -225,21 +228,34 @@ kindergarten
   - `kindergarten/groups/first-group/activities/singing.md`
   - `kindergarten/groups/second-group/gruop-info.csv`
 - Your current directory is `kindergarten/`
+
   1. Empty the staging area
   1. Rename `groups/second-group/gruop_info.csv` to `groups/second-group/group_info.csv`
   1. Move all the pictures from `groups/second-group/pictures/` to `groups/first-group/pictures`
   1. Overwrite the `groups/first-group/activites/painting.md` file extension to `.doc`
   1. Overwrite the `groups/first-group/activites/singing.md` file extension to `.pdf`
   1. Update the `groups/first-group/group_info.csv` with the following lines
-      - `Brenda Watson,4,15.8 kg,100.8 cm`
-      - `David Sanchez,5,17.1 kg,106.2 cm`
+
+     - `Brenda Watson,4,15.8 kg,100.8 cm`
+     - `David Sanchez,5,17.1 kg,106.2 cm`
 
      (The file should only contain the above 2 lines as a result.)
+
   1. Write the command which commits all the changes
 
-
-- Solution:
+* Solution:
 
 ```text
 *type your answer here*
+
+1.git reset HEAD -- path/to/file   (git reset)
+2. mv groups/second-group/gruop_info.csv groups/second-group/group_info.csv
+3. mv groups/second-group/pictures/ groups/first-group/pictures
+4.groups/first-group/activites/painting.md
+for file in *.md; do mv "$file" "${file%.md}.doc"; done
+5. groups/first-group/activites/singing.md
+for file in *.md; do mv "$file" "${file%.md}.pdf"; done
+6.
+7.git add .
+git status
 ```
